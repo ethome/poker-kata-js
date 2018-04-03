@@ -2,8 +2,10 @@ Poker Hands Kata
 =================
 > Practice test-driven development by implementing ranking of poker hands.
 
+<img title="Poker" src="http://satisfiction.me/wp-content/uploads/2018/01/Poker-Strategy.jpg" width="500">
 
 ## Problem description
+
 http://codingdojo.org/kata/PokerHands/
 
 
