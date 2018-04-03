@@ -1,0 +1,19 @@
+{
+  "name": "poker-kata-js",
+  "version": "1.0.0",
+  "description": "Practice test-driven development by implementing ranking of poker hands.",
+  "repository": "git@github.com:ethome/poker-kata-js.git",
+  "author": "Ed Thome <ethome@thoughtworks.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch src"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.3",
+    "regenerator-runtime": "^0.11.1"
+  }
+}
