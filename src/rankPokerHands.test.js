@@ -57,10 +57,28 @@ describe('rankPokerHands', () => {
 
   test('ace beats king', () => {
     let kingHigh = 'KH 9D JS 5C 6D'
-    let queenHigh = '10C QH 4H AS 7D'
+    let aceHigh = '10C QH 4H AS 7D'
   
-    const result = rankPokerHands(kingHigh, queenHigh)
+    const result = rankPokerHands(kingHigh, aceHigh)
   
     expect(result).toEqual('Second hand wins. - with high card: Ace')
+  })
+  
+  test('pair beats high card', () => {
+    let pair = '2H 9D JS 5C 2D'
+    let aceHigh = '10C QH 4H AS 7D'
+  
+    const result = rankPokerHands(pair, aceHigh)
+  
+    expect(result).toEqual('First hand wins. - with pair: 2')
+  })
+  
+  test('higher pair beats lower pair', () => {
+    let pairOfSevens = '7H 7C JS 5C 2D'
+    let pairOfThrees = '10C QH 3H AS 3D'
+  
+    const result = rankPokerHands(pairOfSevens, pairOfThrees)
+  
+    expect(result).toEqual('First hand wins. - with pair: 7')
   })
 })
